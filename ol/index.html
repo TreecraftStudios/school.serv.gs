@@ -1,0 +1,68 @@
+<body>
+<center>
+<a onclick="audio.play()" href="#" class="normalL">Load Game</a>
+</center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body {
+  background-image: url('https://wallpapercave.com/wp/wp1902597.jpg');
+}
+</style>
+<script>
+var audio = new Audio("bg.mp3");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+
+</script>
+
+<style>
+.normalL {
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:19px 53px;
+	text-decoration:none;
+}
+.normalL:hover {
+	background-color:#3a84f2;
+}
+.normalL:active2 {
+	position:relative;
+	top:1px;
+}
+
+</style>
